@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body class="flex justify-center items-center min-h-screen">
+    <div class="flex flex-col bg-gray-500 w-[50%]">
+        <h1 class="font-bold text-2xl flex justify-center mt-5 text-orange-500">Password Generator</h1>
+        <div class="flex gap-3 w-full mt-10 mx-4">
+            <input type="text" placeholder="Password" class="password h-10 w-[85%] text-blue px-5 rounded-xl">
+
+            <button
+                class="copy flex justify-center items-center font-bold bg-blue-500 hover:bg-green-700 px-4 py-2 rounded-2xl cursor-pointer">Copy</button>
+        </div>
+        <div class="flex items-center gap-10 my-5 mx-4 w-full h-10">
+            <div>
+                <input type="range" class="range h-2 cursor-pointer" min="0" max="50" value="8">
+                <span class="rangeunit text-xl font-bold text-orange-500">Length:8</span>
+            </div>
+            <div>
+                <input type="checkbox" class="h-4 w-4 number cursor-pointer">
+                <span class="text-xl font-bold text-orange-500">Number</span>
+            </div>
+            <div>
+                <input type="checkbox" class="h-4 w-4 character cursor-pointer">
+                <span class="text-xl font-bold text-orange-500">character</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
